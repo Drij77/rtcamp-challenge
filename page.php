@@ -1,11 +1,23 @@
-
+<?php
+/**
+ * The Home Page template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package drij
+ */
 
 get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
-
+<!-- Starting point of Custom Post Based Slider -->
 
 			<div class="slider-bg">
 				<div class="container">
@@ -62,9 +74,12 @@ get_header();
 							 ?>
 						</ul>
 					</div><!--.slider-innerr -->
-				</div>
-			</div>
+				</div><!--.container-->
+			</div><!--.slider-bg -->
 
+<!-- Ending point of Custom Post Based Slider -->	
+
+<!-- Starting point of Child Pages of Home Page -->	
 
 			<div class="container child-pages-container">
 				<div class="row">
@@ -72,9 +87,9 @@ get_header();
 						<div class="child-pages">
 						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-1')" onClick="openChildPage(event, 'child-page-1')" id="defaultOpen">FINDING</a>
 						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-2')">PROMOTIONAL ACTIVITIES</a>	
-						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-3')">ENVIROMENT</a>
+						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-3')">ENVIROMENTS</a>
 						</div><!--.tab-->
-					</div>
+					</div><!--.col-3-->
 
 					<div id="child-page-1" class="col-child-content tabcontent">
 						<?php
@@ -133,6 +148,7 @@ get_header();
 								
 						<?php } ?>
 				    </div>
+
 					<div id="child-page-3" class="col-child-content tabcontent">
 						<?php
 							$my_wp_query = new WP_Query();
