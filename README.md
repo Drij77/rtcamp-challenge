@@ -1,4 +1,4 @@
-##rtCamp WordPress  Assignment
+@rtCamp WordPress  Assignment
   This is assignment no 1 of converting psd to theme in wordpress.
 
 @ Theme I used for this challenge is
