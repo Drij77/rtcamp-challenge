@@ -87,7 +87,7 @@ get_header();
 						<div class="child-pages">
 						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-1')" onClick="openChildPage(event, 'child-page-1')" id="defaultOpen">FINDING</a>
 						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-2')">PROMOTIONAL ACTIVITIES</a>	
-						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-3')">ENVIROMENTS</a>
+						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-3')">ENVIROMENT</a>
 						</div><!--.tab-->
 					</div><!--.col-3-->
 
