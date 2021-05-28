@@ -9,9 +9,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package rtCamp_Assignment
+ * @package drij
  */
-
 get_header();
 ?>
 
