@@ -11,6 +11,7 @@
  *
  * @package drij
  */
+
 get_header();
 ?>
 
