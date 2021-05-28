@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package rtCamp_Assignment
+ * @package drij
  */
 
 get_header();
