@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package rtCamp_Assignment
+ * @package drij
  */
 
 if ( ! function_exists( 'rtcamp_assignment_setup' ) ) :
