@@ -1,13 +1,4 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package rtCamp_Assignment
- */
+
 
 ?>
 <!doctype html>
@@ -43,7 +34,7 @@
 									        echo '<img src="'. esc_url( $logo[0] ) .'">';
 									}
 									else {
-								        echo '<img class="defaultlogo" src=" '. get_template_directory_uri() .'/lib/images/default-logo.png" height="100" width="200">';
+								        echo '<img class="defaultlogo" src=" '. get_template_directory_uri() .'/lib/images/logo.png" height="100" width="200">';
 									}
 								?>
 							</div><!-- .site-branding -->
