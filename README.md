@@ -4,7 +4,7 @@
 # Theme I used :
  the theme I used for this challenge is Underscores starter theme:(https://underscores.me/)
 
-@ Plugin which was used in this challenge :
+# Plugin which was used in this challenge :
  Recent Posts Widget Extended:(https://wordpress.org/plugins/recent-posts-widget-extended/)
  
 
