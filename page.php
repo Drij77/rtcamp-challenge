@@ -1,23 +1,11 @@
-<?php
-/**
- * The Home Page template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package rtCamp_Assignment
- */
+
 
 get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
-<!-- Starting point of Custom Post Based Slider -->
+
 
 			<div class="slider-bg">
 				<div class="container">
@@ -74,12 +62,9 @@ get_header();
 							 ?>
 						</ul>
 					</div><!--.slider-innerr -->
-				</div><!--.container-->
-			</div><!--.slider-bg -->
+				</div>
+			</div>
 
-<!-- Ending point of Custom Post Based Slider -->	
-
-<!-- Starting point of Child Pages of Home Page -->	
 
 			<div class="container child-pages-container">
 				<div class="row">
@@ -87,9 +72,9 @@ get_header();
 						<div class="child-pages">
 						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-1')" onClick="openChildPage(event, 'child-page-1')" id="defaultOpen">FINDING</a>
 						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-2')">PROMOTIONAL ACTIVITIES</a>	
-						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-3')">ENVIRONMENT</a>
+						  <a class="child-button tablinks" onmouseover="openChildPage(event, 'child-page-3')">ENVIROMENT</a>
 						</div><!--.tab-->
-					</div><!--.col-3-->
+					</div>
 
 					<div id="child-page-1" class="col-child-content tabcontent">
 						<?php
@@ -118,7 +103,7 @@ get_header();
 	                   			</div>
 								
 						<?php } ?>
-					</div><!-- #child-page-1 -->
+					</div>
 
 					<div id="child-page-2" class="col-child-content tabcontent">
 					 	<?php
@@ -147,8 +132,7 @@ get_header();
 	                   			</div>
 								
 						<?php } ?>
-				    </div><!-- #child-page-2 -->
-
+				    </div>
 					<div id="child-page-3" class="col-child-content tabcontent">
 						<?php
 							$my_wp_query = new WP_Query();
@@ -156,7 +140,7 @@ get_header();
 								'post_type' => 'page',
 								'posts_per_page' => '-1'
 								));
-							$Home_child =  get_page_by_title('ENVIRONMENT');
+							$Home_child =  get_page_by_title('ENVIROMENT');
 							$promotional_activities_children = get_page_children( $Home_child->ID, $all_wp_pages );
 
 							foreach ($promotional_activities_children as $key) {
@@ -176,15 +160,15 @@ get_header();
 	                   			</div>
 								
 						<?php } ?>
-					</div><!-- #child-page-3 -->
+					</div>
 
-				</div><!--.row-->
-			</div><!--.child pages box-->
+				</div>
+			</div>
 
-<!-- Ending point of Child Pages of Home Page -->
 
-</main><!--.site-main-->
-</div><!--.content-area-->
+
+</main>
+</div>
 
 <?php
 get_sidebar();
