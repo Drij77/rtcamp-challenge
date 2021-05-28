@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -19,7 +17,7 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'rtcamp-assignment' ); ?></a>
-<!--Starting Point of Header -->
+
 
 		<div class="box">
 			<div class="container">
@@ -34,11 +32,11 @@
 									        echo '<img src="'. esc_url( $logo[0] ) .'">';
 									}
 									else {
-								        echo '<img class="defaultlogo" src=" '. get_template_directory_uri() .'/lib/images/logo.png" height="100" width="200">';
+								        echo '<img class="defaultlogo" src=" '. get_template_directory_uri() .'/lib/images/default-logo.png" height="100" width="200">';
 									}
 								?>
-							</div><!-- .site-branding -->
-						</div><!-- .col-5 -->
+							</div>
+						</div>
 						<div class="col-7">
 							<nav id="site-navigation" class="main-navigation">
 								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true"><?php esc_html_e( 'Menu', 'rtcamp-assignment' ); ?></button>
@@ -48,13 +46,12 @@
 									'menu_id'        => 'primary-menu',
 									) );
 								?>
-							</nav><!-- #site-navigation -->
-						</div><!-- .col-7 -->
-					</div><!-- .row -->
-				</header><!-- #masthead -->
-			</div><!-- .container -->
-		</div><!-- .box -->
+							</nav>
+						</div>
+					</div>
+				</header>
+			</div>
+		</div>
 
-<!-- Ending Point of Header -->
 
 	<div id="content" class="site-content">
